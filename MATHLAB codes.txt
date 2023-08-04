@@ -1,0 +1,157 @@
+% First channel
+readChannelID = aaaaaaaaaaaa;
+fieldID1 = 1;
+fieldID2 = 2;
+fieldID3 = 3;
+fieldID4 = 4;
+fieldID5 = 5;
+fieldID6 = 6;
+fieldID7 = 7;
+fieldID8 = 8;
+% Second Channel
+readChannelID2 = bbbbbbbbb;
+fieldID9 = 1;
+fieldID10 = 2;
+fieldID11 = 3;
+fieldID12 = 4;
+fieldID13 = 5;
+fieldID14 = 6;
+fieldID15 = 7;
+fieldID16 = 8;
+% Third Channel
+readChannelID3 = ccccccccccccc;
+fieldID17 = 1;
+fieldID18 = 2;
+fieldID19 = 3;
+fieldID20 = 4;
+fieldID21 = 5;
+fieldID22 = 6;
+fieldID23 = 7;
+fieldID24 = 8;
+% Fourth Channel
+readChannelID4 =dddddddddddd;
+fieldID25 = 1;
+fieldID26 = 2;
+fieldID27 = 3;
+fieldID28 = 4;
+fieldID29 = 5;
+fieldID30 = 6;
+fieldID31 = 7;
+fieldID32 = 8;
+
+% Channel Read API Key
+% If your channel is private, then enter the read API
+% Key between the '' below:
+readAPIKey = 'EEEEEEEEEEE';
+readAPIKey2 = 'FFFFFFFFFFFF';
+readAPIKey3 = 'GGGGGGGGGGGG';
+readAPIKey4 = 'HHHHHHHHHHHHHHHH';
+
+%% Read Data from all fields (feeds)
+data1 = thingSpeakRead(readChannelID, 'Field', fieldID1, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data2 = thingSpeakRead(readChannelID, 'Field', fieldID2, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data3 = thingSpeakRead(readChannelID, 'Field', fieldID3, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data4 = thingSpeakRead(readChannelID, 'Field', fieldID4, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data5 = thingSpeakRead(readChannelID, 'Field', fieldID5, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data6 = thingSpeakRead(readChannelID, 'Field', fieldID6, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data7 = thingSpeakRead(readChannelID, 'Field', fieldID7, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data8 = thingSpeakRead(readChannelID, 'Field', fieldID8, 'NumPoints', 1, 'ReadKey', readAPIKey);
+data9 = thingSpeakRead(readChannelID2, 'Field', fieldID9, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data10 = thingSpeakRead(readChannelID2, 'Field', fieldID10, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data11 = thingSpeakRead(readChannelID2, 'Field', fieldID11, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data12 = thingSpeakRead(readChannelID2, 'Field', fieldID12, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data13 = thingSpeakRead(readChannelID2, 'Field', fieldID13, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data14 = thingSpeakRead(readChannelID2, 'Field', fieldID14, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data15 = thingSpeakRead(readChannelID2, 'Field', fieldID15, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data16 = thingSpeakRead(readChannelID2, 'Field', fieldID16, 'NumPoints', 1, 'ReadKey', readAPIKey2);
+data17 = thingSpeakRead(readChannelID3, 'Field', fieldID17, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data18 = thingSpeakRead(readChannelID3, 'Field', fieldID18, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data19 = thingSpeakRead(readChannelID3, 'Field', fieldID19, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data20 = thingSpeakRead(readChannelID3, 'Field', fieldID20, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data21 = thingSpeakRead(readChannelID3, 'Field', fieldID21, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data22 = thingSpeakRead(readChannelID3, 'Field', fieldID22, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data23 = thingSpeakRead(readChannelID3, 'Field', fieldID23, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data24 = thingSpeakRead(readChannelID3, 'Field', fieldID24, 'NumPoints', 1, 'ReadKey', readAPIKey3);
+data25 = thingSpeakRead(readChannelID4, 'Field', fieldID25, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+data26 = thingSpeakRead(readChannelID4, 'Field', fieldID26, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+data27 = thingSpeakRead(readChannelID4, 'Field', fieldID27, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+data28 = thingSpeakRead(readChannelID4, 'Field', fieldID28, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+data29 = thingSpeakRead(readChannelID4, 'Field', fieldID29, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+data30 = thingSpeakRead(readChannelID4, 'Field', fieldID30, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+data31 = thingSpeakRead(readChannelID4, 'Field', fieldID31, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+data32 = thingSpeakRead(readChannelID4, 'Field', fieldID32, 'NumPoints', 1, 'ReadKey', readAPIKey4);
+
+%% Process Data
+% Set the angles. Change from degee to Radian
+theta1 = deg2rad(0)
+theta2 = deg2rad(5)
+theta3 = deg2rad(10)
+theta4 = deg2rad(15)
+theta5 = deg2rad(20)
+theta6 = deg2rad(25)
+theta7 = deg2rad(30)
+theta8 = deg2rad(35)
+theta9 = deg2rad(40)
+theta10 = deg2rad(45)
+theta11 = deg2rad(50)
+theta12 = deg2rad(55)
+theta13 = deg2rad(60)
+theta14 = deg2rad(65)
+theta15 = deg2rad(70)
+theta16 = deg2rad(75)
+theta17 = deg2rad(80)
+theta18 = deg2rad(85)
+theta19 = deg2rad(90)
+theta20 = deg2rad(95)
+theta21 = deg2rad(100)
+theta22 = deg2rad(105)
+theta23 = deg2rad(110)
+theta24 = deg2rad(115)
+theta25 = deg2rad(120)
+theta26 = deg2rad(125)
+theta27 = deg2rad(130)
+theta28 = deg2rad(135)
+theta29 = deg2rad(140)
+theta30 = deg2rad(145)
+theta31 = deg2rad(150)
+theta32 = deg2rad(155)
+
+%Input data to rho
+rho1 = data1
+rho2 = data2
+rho3 = data3
+rho4 = data4
+rho5 = data5
+rho6 = data6
+rho7 = data7
+rho8 = data8
+rho9 = data9
+rho10 = data10
+rho11 = data11
+rho12 = data12
+rho13 = data13
+rho14 = data14
+rho15 = data15
+rho16 = data16
+rho17 = data17
+rho18 = data18
+rho19 = data19
+rho20 = data20
+rho21 = data21
+rho22 = data22
+rho23 = data23
+rho24 = data24
+rho25 = data25
+rho26 = data26
+rho27 = data27
+rho28 = data28
+rho29 = data29
+rho30 = data30
+rho31 = data31
+rho32 = data32
+
+%% Visualize Data
+polarplot(theta1,rho1,'*',theta2,rho2,'*',theta3,rho3,'*',theta3,rho3,'*',theta4,rho4,'*',theta5,rho5,'*',theta6,rho6,'*',theta7,rho7,'*',theta8,rho8,'*',theta9,rho9,'*',theta10,rho10,'*',theta11,rho11,'*',theta12,rho12,'*',theta13,rho13,'*',theta14,rho14,'*',theta15,rho15,'*',theta16,rho16,'*',theta17,rho17,'*',theta18,rho18,'*',theta19,rho19,'*',theta20,rho20,'*',theta21,rho21,'*',theta22,rho22,'*',theta23,rho23,'*',theta24,rho24,'*',theta25,rho25,'*',theta26,rho26,'*',theta27,rho27,'*',theta28,rho28,'*',theta29,rho29,'*',theta30,rho30,'*',theta31,rho31,'*',theta32,rho32,'*')
+
+% Set the graph from 0 to 180 degree
+thetalim([0 180])
