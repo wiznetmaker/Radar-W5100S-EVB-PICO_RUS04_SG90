@@ -5,14 +5,6 @@
 # If you put them in the code you risk committing that info or sharing it
 
 secrets = {
-    #"ssid": "Ron Pang",
-    #"password": "d1xon5428",
-    #"timezone": -5,  # this is offset from UTC
-    #"github_token": "abcdefghij0123456789",
-    #"aio_username": "ronpang",
-    #"aio_key": "aio_YRId56uvK9DyGzqcsiFX4sppdbhk",
-    #"aio_username": "Markyu",
-    #"aio_key": "aio_srEq30psnKAzoHQERAcjFrMmxuqk",
     "thingspeak_user": "ccccccccccccccc",
     "thingspeak_pass": "bbbbbbbbbbbbbb,
     "thingspeak_id": "aaaaaaaaaa",
